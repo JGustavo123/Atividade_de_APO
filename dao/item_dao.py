@@ -2,8 +2,6 @@ from database.db import conectar, criar_tabela
 from models.item import Item
 
 class ItemDAO:
-    def __init__(self):
-        criar_tabela()
 
     def adicionar(self, item: Item):
         conn = conectar()
